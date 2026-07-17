@@ -36,73 +36,50 @@ export const portfolioData: PortfolioData = {
     title: 'Sobre Mim',
     subtitle: 'Conheça um pouco sobre minha formação e meus objetivos',
     presentation:
-      'Sou estudante do 4º período de Engenharia de Software e do 2º período de Big Data e Inteligência Artificial. Durante minha formação, venho desenvolvendo conhecimentos em programação, desenvolvimento de software, bancos de dados, estruturas de dados, tecnologias web e fundamentos relacionados a dados e inteligência artificial.\n\nTenho maior interesse em desenvolvimento back-end, principalmente utilizando Java e Spring Boot. Também estudo tecnologias front-end para compreender a construção de aplicações completas, além de utilizar bancos de dados como MySQL e PostgreSQL.\n\nEm Python, possuo conhecimentos básicos e venho explorando tecnologias relacionadas a processamento de dados, CUDA, RAPIDS e modelos de linguagem. Atualmente, procuro minha primeira oportunidade profissional para aplicar meus conhecimentos, colaborar com uma equipe e continuar evoluindo como desenvolvedor.',
+      'Sou estudante do 4º período de Engenharia de Software e do 2º período de Big Data e Inteligência Artificial.\n\nAo longo da graduação venho desenvolvendo projetos envolvendo desenvolvimento de software, bancos de dados, aplicações web, APIs e programação orientada a objetos.\n\nTenho maior afinidade com desenvolvimento Back-end utilizando Java e Spring Boot, porém também estudo tecnologias Front-end para compreender o ciclo completo de desenvolvimento de aplicações.\n\nAlém do desenvolvimento tradicional, venho aprofundando meus estudos em Inteligência Artificial, Processamento de Dados, Machine Learning, Large Language Models (LLMs), CUDA e RAPIDS, buscando unir desenvolvimento de software com soluções baseadas em IA.\n\nMeu objetivo é construir aplicações modernas que integrem Engenharia de Software, Big Data e Inteligência Artificial.',
     details: [
       { label: 'LOCALIZAÇÃO', value: 'Goiânia — Goiás, Brasil' },
-      { label: 'DISPONIBILIDADE', value: 'Disponível para estágio e oportunidades júnior' },
+      { label: 'DISPONIBILIDADE', value: 'Estágio, Desenvolvedor Back-end, Desenvolvedor Full Stack, Inteligência Artificial, Big Data, Engenharia de Dados, Machine Learning' },
       { label: 'OBJETIVO ATUAL', value: 'Primeira oportunidade profissional em tecnologia' },
     ],
   },
 
   skills: [
     {
-      title: 'Back-end e Programação',
+      title: 'Linguagens',
       skills: [
-        {
-          name: 'Java',
-          level: 'Intermediário',
-          description: 'Utilizado no desenvolvimento de aplicações desktop, programação orientada a objetos, interfaces Java Swing, APIs REST e projetos acadêmicos.',
-        },
-        {
-          name: 'Spring Boot',
-          level: 'Básico/Intermediário',
-          description: 'Utilizado na construção de APIs REST, organização de camadas da aplicação e integração com bancos de dados.',
-        },
-        {
-          name: 'Python',
-          level: 'Básico',
-          description: 'Utilizado em estudos de programação, processamento de dados e inteligência artificial.',
-        },
-        {
-          name: 'Java Swing',
-          level: 'Básico/Intermediário',
-          description: 'Utilizado na criação das interfaces dos projetos Sistema de Gestão de Frotas e PDV Posto de Combustível.',
-        },
+        { name: 'Java' },
+        { name: 'Python' },
+        { name: 'JavaScript' },
+        { name: 'TypeScript' },
+        { name: 'HTML' },
+        { name: 'CSS' },
       ],
     },
     {
-      title: 'Front-end',
+      title: 'Frameworks',
       skills: [
-        {
-          name: 'HTML',
-          level: 'Básico/Intermediário',
-          description: 'Utilizado para estruturar páginas e interfaces web.',
-        },
-        {
-          name: 'CSS',
-          level: 'Básico/Intermediário',
-          description: 'Utilizado para estilização, layouts e responsividade.',
-        },
-        {
-          name: 'JavaScript',
-          level: 'Básico',
-          description: 'Utilizado para adicionar comportamento e interatividade a aplicações web.',
-        },
+        { name: 'Spring Boot' },
+        { name: 'React' },
+        { name: 'Vite' },
       ],
     },
     {
       title: 'Banco de Dados',
       skills: [
-        {
-          name: 'PostgreSQL',
-          level: 'Básico/Intermediário',
-          description: 'Utilizado na persistência de dados do projeto PDV Posto de Combustível.',
-        },
-        {
-          name: 'MySQL',
-          level: 'Básico/Intermediário',
-          description: 'Utilizado na persistência e sincronização de dados do Sistema de Gestão de Frotas.',
-        },
+        { name: 'PostgreSQL' },
+        { name: 'MySQL' },
+        { name: 'HeidiSQL', description: 'Ferramenta para gerenciamento e consulta de bancos de dados.' },
+      ],
+    },
+    {
+      title: 'Inteligência Artificial',
+      skills: [
+        { name: 'CUDA', description: 'Estudos iniciais em processamento paralelo e GPUs.' },
+        { name: 'RAPIDS', description: 'Estudos iniciais em processamento de dados acelerado.' },
+        { name: 'LLMs', description: 'Estudos iniciais em Large Language Models.' },
+        { name: 'Prompt Engineering', description: 'Estudos iniciais em engenharia de prompts.' },
+        { name: 'IA Generativa', description: 'Estudos iniciais em inteligência artificial generativa.' },
       ],
     },
     {
@@ -110,33 +87,18 @@ export const portfolioData: PortfolioData = {
       skills: [
         { name: 'Git' },
         { name: 'GitHub' },
-        { name: 'Visual Studio Code' },
+        { name: 'VS Code' },
         { name: 'IntelliJ IDEA' },
-        {
-          name: 'HeidiSQL',
-          description: 'Ferramenta utilizada para gerenciamento e consulta de bancos de dados.',
-        },
-        { name: 'Maven' },
-        { name: 'Swagger/OpenAPI' },
+        { name: 'Docker' },
       ],
     },
     {
-      title: 'Outros Conhecimentos',
+      title: 'Outras',
       skills: [
-        { name: 'Programação orientada a objetos' },
-        { name: 'Estruturas de dados' },
-        { name: 'Lógica de programação' },
-        { name: 'Desenvolvimento de APIs REST' },
-        { name: 'Arquitetura em camadas' },
-        { name: 'Padrão MVC' },
-        { name: 'Persistência de dados' },
-        { name: 'JPA e Hibernate' },
-        { name: 'Modelagem de banco de dados' },
-        { name: 'Desenvolvimento web' },
-        { name: 'Fundamentos de inteligência artificial' },
-        { name: 'CUDA — estudos iniciais' },
-        { name: 'RAPIDS — estudos iniciais' },
-        { name: 'Modelos de linguagem — estudos iniciais' },
+        { name: 'APIs REST' },
+        { name: 'POO' },
+        { name: 'MVC' },
+        { name: 'Git Flow' },
       ],
     },
   ],
@@ -146,7 +108,7 @@ export const portfolioData: PortfolioData = {
       title: 'PDV Posto de Combustível',
       category: 'Aplicação Java Full Stack',
       shortDescription:
-        'Sistema completo de gerenciamento para postos de combustível, com interface Java Swing, API REST em Spring Boot e persistência em PostgreSQL.',
+        'Sistema desktop completo para gerenciamento de postos de combustíveis, incluindo controle de produtos, estoque, abastecimentos, usuários e operações administrativas.',
       fullDescription:
         'Projeto acadêmico de um sistema de ponto de venda e gerenciamento para postos de combustível. A aplicação possui uma interface gráfica desenvolvida em Java Swing que se comunica com uma API REST criada com Spring Boot, utilizando PostgreSQL para persistência dos dados.',
       participation:
@@ -192,9 +154,9 @@ export const portfolioData: PortfolioData = {
       learnings:
         'Construção de uma aplicação Java dividida entre interface e API, integração com PostgreSQL, organização em camadas, criação de operações CRUD e aplicação de boas práticas de programação orientada a objetos.',
       status: 'Concluído',
-      image: '/project-placeholder.svg',
+      image: '/pdv-comb.jpeg',
       alt: 'Interface do sistema PDV para posto de combustível',
-      tags: ['Java', 'Spring Boot', 'PostgreSQL', 'Java Swing'],
+      tags: ['Java', 'Spring Boot', 'Swing', 'PostgreSQL', 'MVC'],
       featured: true,
       links: {
         github: 'https://github.com/Sidney-Emanuel-Oliveira/pdv-posto-combustivel',
@@ -204,7 +166,7 @@ export const portfolioData: PortfolioData = {
       title: 'Sistema de Gestão de Frotas',
       category: 'Aplicação Desktop em Java',
       shortDescription:
-        'Aplicação Java para controle de veículos, despesas, abastecimentos, manutenções, multas, consumo e custos de uma frota.',
+        'Sistema desktop desenvolvido em Java para gerenciamento de veículos, abastecimentos, manutenções, multas e relatórios administrativos.',
       fullDescription:
         'Sistema desktop desenvolvido em Java e Java Swing para auxiliar no cadastro, controle e gerenciamento de veículos e suas movimentações. A aplicação também gera relatórios para análise de custos, consumo de combustível e desempenho da frota.',
       participation:
@@ -244,9 +206,9 @@ export const portfolioData: PortfolioData = {
       learnings:
         'Desenvolvimento de interfaces com Java Swing, organização de uma aplicação em camadas, persistência de dados, integração com MySQL, estruturas de dados e criação de relatórios.',
       status: 'Concluído',
-      image: '/project-placeholder.svg',
+      image: '/gestao-frotas.png',
       alt: 'Interface do Sistema de Gestão de Frotas desenvolvido em Java',
-      tags: ['Java', 'Java Swing', 'MySQL', 'Maven'],
+      tags: ['Java', 'Swing', 'MySQL', 'Maven'],
       featured: true,
       links: {
         github: 'https://github.com/Sidney-Emanuel-Oliveira/SistemaDeFrotas-PI',
@@ -256,7 +218,7 @@ export const portfolioData: PortfolioData = {
       title: 'ClaraIdeia Landing Page',
       category: 'Aplicação Web',
       shortDescription:
-        'Landing page institucional para uma startup de tecnologia, criada com uma estrutura moderna e recursos para gerenciamento de conteúdo.',
+        'Landing Page institucional moderna desenvolvida para a startup ClaraIdeia, com foco em apresentação empresarial, identidade visual profissional e gerenciamento de conteúdo.',
       fullDescription:
         'Projeto de uma landing page institucional para a startup ClaraIdeia, criada para apresentar a empresa, seus conteúdos e sua proposta de forma moderna, organizada e profissional. O projeto também possui uma estrutura de gerenciamento de conteúdo, permitindo separar a apresentação pública da organização interna dos dados exibidos.',
       participation:
@@ -288,9 +250,9 @@ export const portfolioData: PortfolioData = {
       learnings:
         'Estruturação de uma aplicação web, criação de interfaces institucionais, organização entre front-end e back-end e desenvolvimento de uma solução voltada a uma necessidade real.',
       status: 'Concluído',
-      image: '/project-placeholder.svg',
+      image: '/landing-page.jpeg',
       alt: 'Landing page institucional da startup ClaraIdeia',
-      tags: ['TypeScript', 'HTML', 'CSS', 'Web'],
+      tags: ['React', 'TypeScript', 'Vite', 'HTML', 'CSS'],
       featured: false,
       links: {
         github: 'https://github.com/Sidney-Emanuel-Oliveira/Landing-Page',

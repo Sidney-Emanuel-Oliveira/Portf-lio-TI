@@ -17,12 +17,12 @@ export default function Projects() {
             key={project.title}
             className="group rounded-xl border border-border-subtle bg-bg-surface transition-all duration-300 hover:border-border-hover hover:bg-bg-elevated/50"
           >
-            {/* Imagem placeholder */}
+            {/* Imagem do projeto */}
             <div className="aspect-video w-full overflow-hidden bg-bg-elevated">
               <img
                 src={project.image}
                 alt={project.alt}
-                className="h-full w-full object-cover opacity-50 transition-opacity duration-300 group-hover:opacity-70"
+                className="h-full w-full object-cover opacity-50 transition-all duration-500 group-hover:scale-105 group-hover:opacity-70"
                 loading="lazy"
               />
             </div>

@@ -11,17 +11,25 @@ export default function About() {
         {about.title}
       </SectionTitle>
       <div className="grid gap-10 md:grid-cols-5">
-        {/* Placeholder foto */}
+        {/* Foto real */}
         <div className="flex items-center justify-center md:col-span-2">
-          <div className="flex h-64 w-64 items-center justify-center rounded-2xl border border-border-subtle bg-bg-surface md:h-72 md:w-72">
-            <div className="text-center">
-              <div className="mx-auto mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-bg-elevated">
-                <span className="text-2xl font-bold text-text-tertiary">
-                  {portfolioData.name.charAt(0)}
-                </span>
+          <div className="relative">
+            {/* Glow decorativo atrás da foto */}
+            <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-accent/20 via-accent-alt/10 to-transparent opacity-60 blur-2xl" />
+
+            {/* Moldura com gradiente */}
+            <div className="relative rounded-2xl bg-gradient-to-br from-accent/30 via-accent-alt/20 to-transparent p-1">
+              <div className="overflow-hidden rounded-xl bg-bg-primary">
+                <img
+                  src={portfolioData.photo}
+                  alt={portfolioData.photoAlt}
+                  className="h-64 w-64 object-cover md:h-72 md:w-72"
+                />
               </div>
-              <p className="text-xs text-text-tertiary">Sua foto</p>
             </div>
+
+            {/* Detalhe decorativo canto */}
+            <div className="absolute -bottom-2 -right-2 h-20 w-20 rounded-full border border-accent/20 bg-accent/5 blur-sm" />
           </div>
         </div>
 
