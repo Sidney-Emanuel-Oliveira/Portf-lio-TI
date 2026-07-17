@@ -42,10 +42,9 @@ export default function Footer() {
           </nav>
 
           {/* Copyright */}
-          <div className="text-center text-xs text-text-tertiary">
-            <p>&copy; {currentYear} — {portfolioData.fullName}.</p>
-            <p className="mt-1">{portfolioData.footerMessage}</p>
-          </div>
+          <p className="text-xs text-text-tertiary">
+            &copy; {currentYear} — {portfolioData.fullName}. Todos os direitos reservados.
+          </p>
         </div>
       </div>
     </footer>

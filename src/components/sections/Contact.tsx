@@ -13,7 +13,7 @@ const iconMap: Record<string, React.ReactNode> = {
 export default function Contact() {
   return (
     <Section id="contato">
-      <SectionTitle subtitle="Estou aberto a oportunidades de estágio, posições júnior e projetos que me permitam aplicar meus conhecimentos, colaborar com equipes e continuar evoluindo profissionalmente">
+      <SectionTitle subtitle="Estou disponível para oportunidades de estágio e posições júnior em desenvolvimento de software, Back-end, Full Stack, Inteligência Artificial e Big Data. Também tenho interesse em colaborar em projetos que contribuam para meu crescimento técnico e profissional.">
         Contato
       </SectionTitle>
       <div className="grid gap-6 md:grid-cols-3">

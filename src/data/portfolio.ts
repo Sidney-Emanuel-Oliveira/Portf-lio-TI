@@ -22,13 +22,11 @@ export const portfolioData: PortfolioData = {
   fullName: 'Sidney Emanuel Barbosa de Oliveira',
   monogram: 'S',
   headerName: 'Sidney Oliveira',
-  specialty: 'Estudante de Engenharia de Software e Big Data & IA',
-  heroTag: 'PORTFÓLIO • TECNOLOGIA E DESENVOLVIMENTO',
+  specialty: 'Desenvolvedor de Software em Formação',
+  heroTag: 'PORTFÓLIO • DESENVOLVIMENTO, IA E DADOS',
   heroDescription:
-    'Sou estudante de Engenharia de Software e Big Data e Inteligência Artificial, com foco em desenvolvimento back-end, aplicações Java, bancos de dados e desenvolvimento de software. Construo minha experiência por meio de projetos acadêmicos e pessoais e busco minha primeira oportunidade profissional na área de tecnologia.',
-  status: 'Em busca da primeira oportunidade em tecnologia',
-  opportunityTypes: 'Estágio, posição júnior e projetos iniciais de desenvolvimento',
-
+    'Construo aplicações com Java, Spring Boot, React e bancos de dados, enquanto aprofundo meus estudos em Inteligência Artificial e Big Data. Busco minha primeira oportunidade para contribuir em projetos reais e continuar evoluindo profissionalmente.',
+  status: 'Disponível para estágio e oportunidades júnior',
   photo: '/retrato-portfolio.png',
   photoAlt: 'Retrato profissional de Sidney Emanuel Barbosa de Oliveira',
 
@@ -36,79 +34,90 @@ export const portfolioData: PortfolioData = {
     title: 'Sobre Mim',
     subtitle: 'Conheça um pouco sobre minha formação e meus objetivos',
     presentation:
-      'Sou estudante do 4º período de Engenharia de Software e do 2º período de Big Data e Inteligência Artificial.\n\nAo longo da graduação venho desenvolvendo projetos envolvendo desenvolvimento de software, bancos de dados, aplicações web, APIs e programação orientada a objetos.\n\nTenho maior afinidade com desenvolvimento Back-end utilizando Java e Spring Boot, porém também estudo tecnologias Front-end para compreender o ciclo completo de desenvolvimento de aplicações.\n\nAlém do desenvolvimento tradicional, venho aprofundando meus estudos em Inteligência Artificial, Processamento de Dados, Machine Learning, Large Language Models (LLMs), CUDA e RAPIDS, buscando unir desenvolvimento de software com soluções baseadas em IA.\n\nMeu objetivo é construir aplicações modernas que integrem Engenharia de Software, Big Data e Inteligência Artificial.',
+      'Sou estudante do 4º período de Engenharia de Software e do 2º período de Big Data e Inteligência Artificial.\n\nDurante minha formação, venho desenvolvendo projetos envolvendo desenvolvimento de software, bancos de dados, aplicações web, APIs e programação orientada a objetos.\n\nTenho maior afinidade com desenvolvimento Back-end utilizando Java e Spring Boot. Também estudo tecnologias Front-end para compreender o ciclo completo de desenvolvimento de aplicações.\n\nParalelamente, aprofundo meus estudos em Inteligência Artificial, processamento de dados, Python, CUDA, RAPIDS e modelos de linguagem.\n\nBusco oportunidades em desenvolvimento de software, Back-end, Full Stack, Inteligência Artificial e Big Data, nas quais eu possa aplicar meus conhecimentos, colaborar com equipes e continuar evoluindo.',
     details: [
+      { label: 'FORMAÇÃO', value: 'Engenharia de Software — 4º período\nBig Data e IA — 2º período' },
+      { label: 'FOCO PRINCIPAL', value: 'Java, Spring Boot, APIs REST e bancos de dados' },
+      { label: 'ÁREAS DE INTERESSE', value: 'Back-end, Full Stack, Inteligência Artificial e Big Data' },
       { label: 'LOCALIZAÇÃO', value: 'Goiânia — Goiás, Brasil' },
-      { label: 'DISPONIBILIDADE', value: 'Estágio, Desenvolvedor Back-end, Desenvolvedor Full Stack, Inteligência Artificial, Big Data, Engenharia de Dados, Machine Learning' },
-      { label: 'OBJETIVO ATUAL', value: 'Primeira oportunidade profissional em tecnologia' },
+      { label: 'DISPONIBILIDADE', value: 'Estágio e oportunidades júnior' },
     ],
   },
 
   skills: [
     {
-      title: 'Linguagens',
+      title: 'Principais Tecnologias',
+      highlight: 'Principais',
       skills: [
-        { name: 'Java' },
-        { name: 'Python' },
-        { name: 'JavaScript' },
-        { name: 'TypeScript' },
-        { name: 'HTML' },
-        { name: 'CSS' },
+        { name: 'Java', level: 'Intermediário' },
+        { name: 'Spring Boot' },
+        { name: 'PostgreSQL' },
+        { name: 'MySQL' },
+        { name: 'APIs REST' },
+        { name: 'Maven' },
+        { name: 'Programação Orientada a Objetos' },
       ],
     },
     {
-      title: 'Frameworks',
+      title: 'Desenvolvimento Web e Tecnologias Complementares',
+      highlight: 'Complementares',
       skills: [
-        { name: 'Spring Boot' },
+        { name: 'HTML' },
+        { name: 'CSS' },
+        { name: 'JavaScript' },
+        { name: 'TypeScript' },
         { name: 'React' },
+        { name: 'TailwindCSS' },
         { name: 'Vite' },
       ],
     },
     {
-      title: 'Banco de Dados',
-      skills: [
-        { name: 'PostgreSQL' },
-        { name: 'MySQL' },
-        { name: 'HeidiSQL', description: 'Ferramenta para gerenciamento e consulta de bancos de dados.' },
-      ],
-    },
-    {
-      title: 'Inteligência Artificial',
-      skills: [
-        { name: 'CUDA', description: 'Estudos iniciais em processamento paralelo e GPUs.' },
-        { name: 'RAPIDS', description: 'Estudos iniciais em processamento de dados acelerado.' },
-        { name: 'LLMs', description: 'Estudos iniciais em Large Language Models.' },
-        { name: 'Prompt Engineering', description: 'Estudos iniciais em engenharia de prompts.' },
-        { name: 'IA Generativa', description: 'Estudos iniciais em inteligência artificial generativa.' },
-      ],
-    },
-    {
-      title: 'Ferramentas',
+      title: 'Ferramentas e Ambiente',
+      highlight: 'Ferramentas',
       skills: [
         { name: 'Git' },
         { name: 'GitHub' },
         { name: 'VS Code' },
         { name: 'IntelliJ IDEA' },
-        { name: 'Docker' },
+        { name: 'HeidiSQL', description: 'Ferramenta para gerenciamento e consulta de bancos de dados.' },
+        { name: 'Docker', level: 'Em aprendizado' },
       ],
     },
     {
-      title: 'Outras',
+      title: 'Fundamentos',
+      highlight: 'Fundamentos',
       skills: [
-        { name: 'APIs REST' },
-        { name: 'POO' },
+        { name: 'Banco de Dados' },
+        { name: 'Estruturas de Dados' },
         { name: 'MVC' },
         { name: 'Git Flow' },
+        { name: 'Engenharia de Software' },
+      ],
+    },
+    {
+      title: 'Inteligência Artificial e Dados',
+      highlight: 'Em aprendizado',
+      skills: [
+        { name: 'Python', level: 'Básico' },
+        { name: 'Inteligência Artificial' },
+        { name: 'Big Data' },
+        { name: 'Processamento de Dados' },
+        { name: 'CUDA' },
+        { name: 'RAPIDS' },
+        { name: 'LLMs' },
+        { name: 'IA Generativa' },
+        { name: 'Prompt Engineering' },
       ],
     },
   ],
 
   projects: [
     {
+      id: 'pdv-posto-combustivel',
       title: 'PDV Posto de Combustível',
-      category: 'Aplicação Java Full Stack',
+      category: 'Aplicação Java com Back-end e interface desktop',
       shortDescription:
-        'Sistema desktop completo para gerenciamento de postos de combustíveis, incluindo controle de produtos, estoque, abastecimentos, usuários e operações administrativas.',
+        'Sistema para gerenciamento de postos de combustíveis, com recursos relacionados a abastecimentos, estoque, funcionários, clientes, produtos, preços, custos e administração.',
       fullDescription:
         'Projeto acadêmico de um sistema de ponto de venda e gerenciamento para postos de combustível. A aplicação possui uma interface gráfica desenvolvida em Java Swing que se comunica com uma API REST criada com Spring Boot, utilizando PostgreSQL para persistência dos dados.',
       participation:
@@ -163,14 +172,15 @@ export const portfolioData: PortfolioData = {
       },
     },
     {
+      id: 'sistema-gestao-frotas',
       title: 'Sistema de Gestão de Frotas',
-      category: 'Aplicação Desktop em Java',
+      category: 'Aplicação desktop em Java',
       shortDescription:
-        'Sistema desktop desenvolvido em Java para gerenciamento de veículos, abastecimentos, manutenções, multas e relatórios administrativos.',
+        'Sistema desktop para gerenciamento de frotas, veículos, abastecimentos, manutenções, despesas e informações operacionais.',
       fullDescription:
         'Sistema desktop desenvolvido em Java e Java Swing para auxiliar no cadastro, controle e gerenciamento de veículos e suas movimentações. A aplicação também gera relatórios para análise de custos, consumo de combustível e desempenho da frota.',
       participation:
-        'O desenvolvimento foi realizado majoritariamente por Sidney Emanuel Barbosa de Oliveira. Houve uma colaboração pequena e pontual de um colega em parte do projeto, sem retirar meu papel principal na construção e organização do sistema.',
+        'Atuei como principal responsável pelo desenvolvimento e pela implementação da maior parte das funcionalidades do projeto.',
       features: [
         'Cadastro de veículos',
         'Cadastro de tipos de despesas',
@@ -215,10 +225,11 @@ export const portfolioData: PortfolioData = {
       },
     },
     {
+      id: 'claraideia-landing-page',
       title: 'ClaraIdeia Landing Page',
       category: 'Aplicação Web',
       shortDescription:
-        'Landing Page institucional moderna desenvolvida para a startup ClaraIdeia, com foco em apresentação empresarial, identidade visual profissional e gerenciamento de conteúdo.',
+        'Landing page institucional moderna desenvolvida para a startup ClaraIdeia, com apresentação de serviços e estrutura preparada para gerenciamento de conteúdo.',
       fullDescription:
         'Projeto de uma landing page institucional para a startup ClaraIdeia, criada para apresentar a empresa, seus conteúdos e sua proposta de forma moderna, organizada e profissional. O projeto também possui uma estrutura de gerenciamento de conteúdo, permitindo separar a apresentação pública da organização interna dos dados exibidos.',
       participation:
@@ -264,53 +275,32 @@ export const portfolioData: PortfolioData = {
 
   experiences: [
     {
-      period: '17/02/2025 — 27/06/2025',
+      period: '2025',
       title: 'Início da formação em Engenharia de Software',
       context: '1º módulo',
       description:
         'Início dos estudos em programação, algoritmos, lógica computacional, arquitetura de computadores e fundamentos de engenharia de software.',
     },
     {
-      period: '17/10/2025 — 19/12/2025',
-      title: 'Evolução nos fundamentos de computação',
-      context: '2º módulo',
+      period: '2025–2026',
+      title: 'Desenvolvimento de fundamentos e projetos',
+      context: '2º e 3º módulos',
       description:
-        'Continuidade da formação com estudos em sistemas operacionais, técnicas de programação, circuitos digitais, fundamentos matemáticos e processos de engenharia de software.',
-    },
-    {
-      period: '26/01/2026 — 26/06/2026',
-      title: 'Banco de dados e estruturas de software',
-      context: '3º módulo',
-      description:
-        'Desenvolvimento de conhecimentos em banco de dados, estruturas de dados, engenharia de requisitos, redes de computadores e computação gráfica.',
+        'Evolução em programação, banco de dados, estruturas de dados, engenharia de requisitos, redes e desenvolvimento de aplicações. Durante a formação, desenvolvi projetos como o PDV Posto de Combustível, o Sistema de Gestão de Frotas e a ClaraIdeia Landing Page.',
     },
     {
       period: 'Atualmente',
-      title: '4º período de Engenharia de Software',
-      context: 'Formação em andamento',
+      title: 'Engenharia de Software e Big Data & IA',
+      context: '4º período — formação em andamento',
       description:
-        'Continuidade da graduação e desenvolvimento de novos conhecimentos em engenharia de software, programação e construção de aplicações.',
-    },
-    {
-      period: 'Atualmente',
-      title: 'Big Data e Inteligência Artificial',
-      context: '2º período — formação em andamento',
-      description:
-        'Estudos relacionados a programação, dados, processamento de informações e fundamentos de inteligência artificial.',
-    },
-    {
-      period: 'Durante a formação',
-      title: 'Desenvolvimento de projetos práticos',
-      context: 'Projetos acadêmicos e pessoais',
-      description:
-        'Construção dos projetos PDV Posto de Combustível, Sistema de Gestão de Frotas e ClaraIdeia Landing Page, aplicando conhecimentos de Java, Spring Boot, bancos de dados, desenvolvimento web e arquitetura de software.',
+        'Cursando o 4º período de Engenharia de Software e o 2º período de Big Data e Inteligência Artificial, aprofundando conhecimentos em desenvolvimento, dados e IA.',
     },
     {
       period: 'Próximo passo',
       title: 'Primeira oportunidade profissional',
       context: 'Em busca de estágio ou posição júnior',
       description:
-        'Busco uma oportunidade para aplicar meus conhecimentos, colaborar em projetos reais, aprender com profissionais da área e continuar evoluindo como desenvolvedor.',
+        'Busco uma oportunidade de estágio ou posição júnior para aplicar meus conhecimentos, colaborar em projetos reais e continuar evoluindo profissionalmente.',
     },
   ],
 
@@ -339,12 +329,12 @@ export const portfolioData: PortfolioData = {
   ],
 
   footerMessage:
-    'Desenvolvido com dedicação, aprendizado e atenção aos detalhes.',
+    'Desenvolvido com React, TypeScript e dedicação aos detalhes.',
 
   seo: {
-    title: 'Sidney Oliveira | Desenvolvedor Java em Formação',
+    title: 'Sidney Oliveira | Desenvolvedor de Software',
     description:
-      'Portfólio de Sidney Oliveira, estudante de Engenharia de Software e Big Data e IA, com projetos em Java, Spring Boot, bancos de dados e desenvolvimento web.',
+      'Portfólio de Sidney Emanuel Barbosa de Oliveira, estudante de Engenharia de Software e Big Data & Inteligência Artificial, com projetos em Java, Spring Boot, React, bancos de dados e desenvolvimento de software.',
     keywords:
       'Sidney Oliveira, desenvolvedor Java, Spring Boot, Engenharia de Software, Big Data, Inteligência Artificial, PostgreSQL, MySQL, desenvolvimento back-end, portfólio de programação, estudante de tecnologia',
     author: 'Sidney Emanuel Barbosa de Oliveira',

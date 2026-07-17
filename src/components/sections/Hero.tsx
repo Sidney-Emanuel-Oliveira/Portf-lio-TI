@@ -1,5 +1,6 @@
 import { portfolioData } from '../../data/portfolio';
 import Button from '../ui/Button';
+import { ExternalLink } from 'lucide-react';
 
 export default function Hero() {
   const handleScroll = (href: string) => {
@@ -29,24 +30,19 @@ export default function Hero() {
           </h1>
 
           {/* Subtítulo */}
-          <p className="mt-4 max-w-2xl text-lg text-text-secondary md:text-xl">
+          <p className="mt-4 text-lg font-medium text-text-primary md:text-xl">
             {portfolioData.specialty}
           </p>
 
           {/* Descrição */}
-          <p className="mt-4 max-w-xl text-sm text-text-tertiary md:text-base">
+          <p className="mt-4 max-w-xl text-sm leading-relaxed text-text-secondary md:text-base">
             {portfolioData.heroDescription}
           </p>
 
-          {/* Status e oportunidades */}
-          <div className="mt-6 flex flex-wrap gap-3">
-            <span className="rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-400">
-              {portfolioData.status}
-            </span>
-            <span className="rounded-full border border-accent/20 bg-accent/5 px-3 py-1 text-xs font-medium text-accent">
-              {portfolioData.opportunityTypes}
-            </span>
-          </div>
+          {/* Status */}
+          <span className="mt-6 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-400">
+            {portfolioData.status}
+          </span>
 
           {/* CTAs */}
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -60,9 +56,10 @@ export default function Hero() {
             <Button
               variant="outlined"
               size="lg"
-              onClick={() => handleScroll('#contato')}
+              onClick={() => window.open('https://github.com/Sidney-Emanuel-Oliveira', '_blank', 'noopener,noreferrer')}
             >
-              Entrar em contato
+              <ExternalLink size={18} />
+              Ver GitHub
             </Button>
           </div>
         </div>
@@ -81,6 +78,8 @@ export default function Hero() {
                   alt={portfolioData.photoAlt}
                   className="h-72 w-72 object-cover md:h-80 md:w-80 lg:h-96 lg:w-96"
                   loading="eager"
+                  width={384}
+                  height={384}
                 />
               </div>
             </div>

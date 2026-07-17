@@ -14,8 +14,8 @@ export default function Projects() {
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {portfolioData.projects.map((project) => (
           <SpotlightCard
-            key={project.title}
-            className="group rounded-xl border border-border-subtle bg-bg-surface transition-all duration-300 hover:border-border-hover hover:bg-bg-elevated/50"
+            key={project.id}
+            className="group flex flex-col rounded-xl border border-border-subtle bg-bg-surface transition-all duration-300 hover:border-border-hover hover:bg-bg-elevated/50"
           >
             {/* Imagem do projeto */}
             <div className="aspect-video w-full overflow-hidden bg-bg-elevated">
@@ -35,12 +35,12 @@ export default function Projects() {
             )}
 
             {/* Conteúdo */}
-            <div className="p-5">
+            <div className="flex flex-1 flex-col p-5">
               <h3 className="text-base font-semibold text-text-primary">
                 {project.title}
               </h3>
               <p className="mt-1 text-xs text-accent">{project.category}</p>
-              <p className="mt-2 text-sm leading-relaxed text-text-secondary line-clamp-2">
+              <p className="mt-2 text-sm leading-relaxed text-text-secondary">
                 {project.shortDescription}
               </p>
 
@@ -54,7 +54,7 @@ export default function Projects() {
               </div>
 
               {/* Links */}
-              <div className="mt-4 flex gap-3">
+              <div className="mt-auto flex gap-3 pt-4">
                 {project.links.github && (
                   <a
                     href={project.links.github}

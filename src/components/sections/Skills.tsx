@@ -15,26 +15,22 @@ export default function Skills() {
             key={category.title}
             className="rounded-xl border border-border-subtle bg-bg-surface p-6 transition-all duration-300 hover:border-border-hover"
           >
-            <h3 className="mb-4 text-sm font-semibold tracking-wider text-accent uppercase">
-              {category.title}
-            </h3>
-            <div className="flex flex-col gap-3">
+            <div className="mb-4 flex items-center justify-between">
+              <h3 className="text-sm font-semibold tracking-wider text-accent uppercase">
+                {category.title}
+              </h3>
+              {category.highlight && (
+                <span className="rounded-full bg-accent/10 px-2.5 py-0.5 text-[10px] font-medium text-accent">
+                  {category.highlight}
+                </span>
+              )}
+            </div>
+            <div className="flex flex-col gap-2.5">
               {category.skills.map((skill) => (
-                <div key={skill.name}>
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm font-medium text-text-primary">
-                      {skill.name}
-                    </span>
-                    {skill.level && (
-                      <span className="text-xs text-text-tertiary">
-                        {skill.level}
-                      </span>
-                    )}
-                  </div>
-                  {skill.description && (
-                    <p className="mt-1 text-xs text-text-secondary">
-                      {skill.description}
-                    </p>
+                <div key={skill.name} className="flex items-center justify-between">
+                  <span className="text-sm text-text-primary">{skill.name}</span>
+                  {skill.level && (
+                    <span className="text-xs text-text-tertiary">{skill.level}</span>
                   )}
                 </div>
               ))}

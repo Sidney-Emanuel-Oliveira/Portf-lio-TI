@@ -63,7 +63,7 @@ export default function Header() {
         </a>
 
         {/* Navegação Desktop */}
-        <nav className="hidden items-center gap-1 md:flex">
+        <nav className="hidden items-center gap-1 md:flex" aria-label="Navegação principal">
           {navLinks.map((link) => {
             const sectionId = link.href.slice(1);
             const isActive = activeSection === sectionId;
@@ -81,6 +81,7 @@ export default function Header() {
                     ? 'text-text-primary'
                     : 'text-text-tertiary hover:text-text-secondary'
                 )}
+                aria-current={isActive ? 'page' : undefined}
               >
                 {link.label}
                 {isActive && (
@@ -91,38 +92,28 @@ export default function Header() {
           })}
         </nav>
 
-        {/* Botão Contato + Menu Mobile */}
-        <div className="flex items-center gap-3">
-          <a
-            href="#contato"
-            onClick={(e) => {
-              e.preventDefault();
-              handleNavClick('#contato');
-            }}
-            className="hidden rounded-lg bg-accent px-4 py-2 text-sm font-medium text-bg-primary transition-all duration-200 hover:bg-accent/90 md:inline-block"
-          >
-            Contato
-          </a>
-
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="flex items-center justify-center rounded-lg p-2 text-text-secondary transition-colors hover:text-text-primary md:hidden"
-            aria-label={isMenuOpen ? 'Fechar menu' : 'Abrir menu'}
-            aria-expanded={isMenuOpen}
-          >
-            {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
-          </button>
-        </div>
+        {/* Menu Mobile */}
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="flex items-center justify-center rounded-lg p-2 text-text-secondary transition-colors hover:text-text-primary md:hidden"
+          aria-label={isMenuOpen ? 'Fechar menu' : 'Abrir menu'}
+          aria-expanded={isMenuOpen}
+          aria-controls="mobile-menu"
+        >
+          {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
+        </button>
       </div>
 
       {/* Menu Mobile */}
       <div
+        id="mobile-menu"
         className={cn(
           'fixed inset-0 top-16 z-40 bg-bg-primary/95 backdrop-blur-xl transition-all duration-300 md:hidden',
           isMenuOpen
             ? 'pointer-events-auto opacity-100'
             : 'pointer-events-none opacity-0'
         )}
+        aria-hidden={!isMenuOpen}
       >
         <nav className="flex flex-col items-center gap-2 px-6 pt-12">
           {navLinks.map((link) => {
@@ -142,21 +133,12 @@ export default function Header() {
                     ? 'bg-accent/10 text-accent'
                     : 'text-text-secondary hover:bg-bg-elevated hover:text-text-primary'
                 )}
+                aria-current={isActive ? 'page' : undefined}
               >
                 {link.label}
               </a>
             );
           })}
-          <a
-            href="#contato"
-            onClick={(e) => {
-              e.preventDefault();
-              handleNavClick('#contato');
-            }}
-            className="mt-4 w-full rounded-lg bg-accent px-4 py-3 text-center text-lg font-medium text-bg-primary transition-colors hover:bg-accent/90"
-          >
-            Contato
-          </a>
         </nav>
       </div>
     </header>

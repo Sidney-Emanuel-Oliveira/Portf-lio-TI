@@ -12,7 +12,7 @@ export default function Experience() {
         {/* Linha vertical da timeline */}
         <div className="absolute left-4 top-0 h-full w-px bg-border-subtle md:left-1/2 md:-translate-x-px" />
 
-        <div className="space-y-12">
+        <div className="space-y-8">
           {portfolioData.experiences.map((exp, index) => {
             const isLeft = index % 2 === 0;
             return (
@@ -26,7 +26,7 @@ export default function Experience() {
                 {/* Conteúdo */}
                 <div
                   className={`ml-10 md:ml-0 md:w-1/2 ${
-                    isLeft ? 'md:pr-12 md:text-right' : 'md:pl-12'
+                    isLeft ? 'md:pr-8 md:text-right' : 'md:pl-8'
                   }`}
                 >
                   <div
@@ -43,7 +43,7 @@ export default function Experience() {
                     <p className="mt-0.5 text-xs text-text-tertiary">
                       {exp.context}
                     </p>
-                    <p className="mt-3 text-sm leading-relaxed text-text-secondary">
+                    <p className="mt-2 text-sm leading-relaxed text-text-secondary">
                       {exp.description}
                     </p>
                   </div>
@@ -57,14 +57,14 @@ export default function Experience() {
         </div>
 
         {/* Link para LinkedIn */}
-        <div className="mt-12 text-center">
+        <div className="mt-10 text-center">
           <a
             href="https://www.linkedin.com/in/sidney-emanuel-107793352/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm text-text-tertiary transition-colors hover:text-accent"
           >
-            Ver informações acadêmicas completas no LinkedIn
+            Ver formação completa no LinkedIn
           </a>
         </div>
       </div>

@@ -23,9 +23,11 @@ export interface Skill {
 export interface SkillCategory {
   title: string;
   skills: Skill[];
+  highlight?: string;
 }
 
 export interface Project {
+  id: string;
   title: string;
   category: string;
   shortDescription: string;
@@ -69,7 +71,6 @@ export interface PortfolioData {
   heroTag: string;
   heroDescription: string;
   status: string;
-  opportunityTypes: string;
   photo: string;
   photoAlt: string;
   about: {
