@@ -60,10 +60,10 @@ export default function Projects() {
                     href={project.links.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 text-xs font-medium text-text-tertiary transition-colors hover:text-text-primary"
+                    className="flex items-center gap-1.5 rounded-lg border border-accent/30 bg-accent/10 px-3 py-1.5 text-xs font-medium text-accent transition-all duration-200 hover:border-accent/50 hover:bg-accent/15"
                   >
                     <GitBranch size={14} />
-                    Código
+                    Ver código
                   </a>
                 )}
               </div>

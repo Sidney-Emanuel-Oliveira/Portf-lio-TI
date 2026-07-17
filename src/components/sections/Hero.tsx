@@ -56,7 +56,7 @@ export default function Hero() {
             <Button
               variant="outlined"
               size="lg"
-              onClick={() => window.open('https://github.com/Sidney-Emanuel-Oliveira', '_blank', 'noopener,noreferrer')}
+              onClick={() => window.open('https://github.com/Sidney-Emanuel-Oliveira', '_blank', 'noopener noreferrer')}
             >
               <ExternalLink size={18} />
               Ver GitHub

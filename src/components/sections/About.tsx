@@ -26,12 +26,14 @@ export default function About() {
         ))}
       </div>
 
-      <div className="mt-12 max-w-3xl space-y-4 text-text-secondary">
-        {about.presentation.split('\n\n').map((paragraph, i) => (
-          <p key={i} className="leading-relaxed">
-            {paragraph}
-          </p>
-        ))}
+      <div className="mt-12 rounded-2xl border border-border-subtle bg-bg-surface/50 p-8 backdrop-blur-sm">
+        <div className="max-w-3xl space-y-4 text-text-secondary">
+          {about.presentation.split('\n\n').map((paragraph, i) => (
+            <p key={i} className="leading-relaxed">
+              {paragraph}
+            </p>
+          ))}
+        </div>
       </div>
     </Section>
   );
